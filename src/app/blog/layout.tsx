@@ -6,10 +6,11 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <SideNav />
-      <hr />
-      {children}
+    <div style={{ display: "flex" }}>
+      <div style={{ width: "10%" }}>
+        <SideNav />
+      </div>
+      <div>{children}</div>
     </div>
   );
 }
