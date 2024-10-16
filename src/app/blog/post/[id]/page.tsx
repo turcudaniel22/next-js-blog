@@ -13,7 +13,6 @@ export default function Page({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <div>Post</div>
       <Post {...post} /> {/* Spread the post properties */}
     </>
   );
