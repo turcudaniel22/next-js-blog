@@ -6,11 +6,11 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ width: "10%" }}>
+    <div className="flex flex-col lg:flex-row min-h-screen">
+      <div className="w-full lg:w-64 bg-gray-200 p-4 lg:p-6">
         <SideNav />
       </div>
-      <div>{children}</div>
+      <div className="flex-1 p-6 bg-white">{children}</div>
     </div>
   );
 }
