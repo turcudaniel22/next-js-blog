@@ -62,28 +62,6 @@ Open your browser and visit http://localhost:3000 to see your site in action.
 Step 5: Start editing ✏️
 The main page can be edited via the app/page.tsx file. As you save changes, the page will auto-refresh in your browser.
 
-Project Structure 🗂️
-
-Here’s an overview of the project structure:
-
-├── .eslintrc.json         # ESLint configuration for code quality
-├── .gitignore             # Git ignore rules
-├── README.md              # Project documentation
-├── auth.config.ts         # Configuration for authentication
-├── next.config.mjs        # Next.js configuration file
-├── package-lock.json      # Automatically generated lock file for npm
-├── package.json           # Project dependencies and scripts
-├── postcss.config.mjs     # PostCSS configuration
-├── public/                # Public static assets like images and icons
-├── scripts/               # Custom scripts, like for seeding the database
-├── src/                   # Source code, including pages and components
-├── tailwind.config.ts     # Tailwind CSS configuration
-├── tsconfig.json          # TypeScript configuration
-src/: Contains all the application code, including pages and components.
-public/: Stores static assets like images, icons, and other files that should be publicly accessible.
-scripts/: Includes scripts like database seeding and custom utilities.
-auth.config.ts: Configuration for handling authentication.
-tailwind.config.ts: Configuration for Tailwind CSS.
 Font Optimization 🎨
 
 This project uses next/font to optimize the Geist font family. This provides faster font loading and improved performance.
