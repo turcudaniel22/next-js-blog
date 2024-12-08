@@ -1,6 +1,6 @@
 ![Next.js](https://img.shields.io/badge/Next.js-11.0.0-black?logo=next.js&logoColor=white&style=flat-square)  
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-blue?logo=tailwindcss&logoColor=white&style=flat-square)  
-![SQL](https://img.shields.io/badge/SQL-2019-blue?logo=postgresql&logoColor=white&style=flat-square)  
+![SQL](https://img.shields.io/badge/SQL-2024-blue?logo=postgresql&logoColor=white&style=flat-square)  
 # Portfolio Blog - Next.js
 
 Welcome to the **Portfolio Blog** project! This is a personal portfolio and blog site built with **Next.js**, showcasing your work and posts with a sleek, modern design. This project leverages Next.js' features like server-side rendering, static site generation, and built-in optimizations.
