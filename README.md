@@ -1,6 +1,9 @@
+![Next.js](https://img.shields.io/badge/Next.js-11.0.0-black?logo=next.js&logoColor=white&style=flat-square)  
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-blue?logo=tailwindcss&logoColor=white&style=flat-square)  
+![SQL](https://img.shields.io/badge/SQL-2019-blue?logo=postgresql&logoColor=white&style=flat-square)  
 # Portfolio Blog - Next.js
 
-Welcome to the **Portfolio Blog** project! This is a personal portfolio and blog site built with **Next.js**, showcasing your work and posts with a sleek, modern design. This project takes advantage of Next.js' features like server-side rendering, static site generation, and built-in optimizations.
+Welcome to the **Portfolio Blog** project! This is a personal portfolio and blog site built with **Next.js**, showcasing your work and posts with a sleek, modern design. This project leverages Next.js' features like server-side rendering, static site generation, and built-in optimizations.
 
 ## Features ✨
 
@@ -28,9 +31,8 @@ Before you start, make sure you have the following tools installed:
 Clone this project to your local machine by running the following command in your terminal:
 
 
-git clone https://github.com/yourusername/portfolio-blog-next.git
-cd portfolio-blog-next
-
+git clone https://github.com/turcudaniel22/next-js-blog.git
+cd next-js-blog
 
 Step 2: Install dependencies
 Run the following command to install the necessary dependencies:
@@ -62,15 +64,26 @@ The main page can be edited via the app/page.tsx file. As you save changes, the 
 
 Project Structure 🗂️
 
-The project follows Next.js conventions with some custom configurations. Here's a quick overview:
+Here’s an overview of the project structure:
 
-app/: Contains all the application code, including pages and components.
-page.tsx: The homepage of the portfolio blog.
-posts/: Folder for storing your blog posts (e.g., Markdown or CMS data).
+├── .eslintrc.json         # ESLint configuration for code quality
+├── .gitignore             # Git ignore rules
+├── README.md              # Project documentation
+├── auth.config.ts         # Configuration for authentication
+├── next.config.mjs        # Next.js configuration file
+├── package-lock.json      # Automatically generated lock file for npm
+├── package.json           # Project dependencies and scripts
+├── postcss.config.mjs     # PostCSS configuration
+├── public/                # Public static assets like images and icons
+├── scripts/               # Custom scripts, like for seeding the database
+├── src/                   # Source code, including pages and components
+├── tailwind.config.ts     # Tailwind CSS configuration
+├── tsconfig.json          # TypeScript configuration
+src/: Contains all the application code, including pages and components.
 public/: Stores static assets like images, icons, and other files that should be publicly accessible.
-styles/: The global styles for the app.
-next.config.js: Configuration for Next.js features like optimizations.
-package.json: Lists project dependencies and defines scripts for tasks like building, testing, etc.
+scripts/: Includes scripts like database seeding and custom utilities.
+auth.config.ts: Configuration for handling authentication.
+tailwind.config.ts: Configuration for Tailwind CSS.
 Font Optimization 🎨
 
 This project uses next/font to optimize the Geist font family. This provides faster font loading and improved performance.
@@ -110,21 +123,9 @@ License 📄
 This project is open-source and available under the MIT License.
 
 
----
+### Key Changes:
 
-### Breakdown of the added icons:
-
-- ✨ for features
-- 🚀 for deployment, server, or performance
-- 📝 for blog posts
-- 💡 for font optimization
-- 📱💻 for responsive design
-- 🛠️ for prerequisites and tools
-- 🌐 for links to resources
-- 🍞 for Bun (to represent the package manager)
-- 🗂️ for project structure
-- 🎨 for font optimization
-- 📚 for learning resources
-- 🌍 for deployment and running the app locally
-- 🤝 for contributing
-- 📄 for license
+1. **Clone Link**: I updated the clone link to your repository URL.
+2. **Project Structure**: I added the directory structure of your project based on the information you provided. This helps contributors understand how the project is organized.
+3. **Icons**: As before, icons are used to add visual flair to the different sections of the README file.
+4. **`src/` and `public/`**: I mentioned the significance of the `src/` and `public/` folders, as those are typically the core places for code and static assets.
