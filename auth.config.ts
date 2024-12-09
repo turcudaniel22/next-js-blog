@@ -1,4 +1,4 @@
-import type { NextAuthConfig } from "next-auth";
+import { NextAuthConfig } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import NextAuth from "next-auth";
 
@@ -9,6 +9,7 @@ export const authConfig = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
+  secret: process.env.AUTH_SECRET,
 } satisfies NextAuthConfig;
 
 export const { handlers, auth, signIn, signOut } = NextAuth(authConfig);
