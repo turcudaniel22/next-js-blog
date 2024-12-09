@@ -59,14 +59,17 @@ export default function Page() {
         router.push("/blog/posts");
       }
     });
-  }, []);
+  });
 
   return (
-    <div className="bg-white p-8 rounded shadow">
+    <div className=" shadow-lg p-8 rounded shadow">
       <h2 className="text-2xl mb-4 text-purple-700">New Blog Post</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="title" className="block font-medium">
+          <label
+            htmlFor="title"
+            className="block font-medium  border-b-gray-900"
+          >
             Title:
           </label>
           <input
@@ -75,7 +78,7 @@ export default function Page() {
             name="title"
             value={formData.title}
             onChange={handleChange}
-            className="w-full border-2 border-purple-100 p-2 rounded-md focus:border-purple-200 focus:outline-none"
+            className="w-full border-2  p-2 rounded-md focus:border-purple-800 focus:outline-none text-black    border-purple-500 "
           />
         </div>
         <div>
@@ -88,7 +91,7 @@ export default function Page() {
             rows={4}
             value={formData.content}
             onChange={handleChange}
-            className="w-full border-2 border-purple-100 p-2 rounded-md focus:border-purple-200 focus:outline-none"
+            className="w-full border-2 border-purple-500 p-2 rounded-md focus:border-purple-200 focus:outline-none text-black"
           ></textarea>
         </div>
         <div>
@@ -101,7 +104,7 @@ export default function Page() {
             name="date"
             value={formData.date}
             readOnly
-            className="w-full border-2 border-purple-100 p-2 rounded-md focus:border-purple-200 focus:outline-none"
+            className="w-full border-2 border-purple-500 p-2 rounded-md focus:border-purple-200 focus:outline-none text-black"
           />
         </div>
         <div>

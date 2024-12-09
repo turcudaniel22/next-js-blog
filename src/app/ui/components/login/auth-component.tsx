@@ -12,7 +12,9 @@ export function SignIn({
         await signIn(provider);
       }}
     >
-      <Button {...props}>Sign In</Button>
+      <Button className="text-black" {...props}>
+        Sign In
+      </Button>
     </form>
   );
 }

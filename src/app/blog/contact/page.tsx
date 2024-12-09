@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen max-w-4xl mx-auto p-6  rounded-lg shadow-lg mt-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-lg w-full space-y-8 mx-auto">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -18,27 +18,24 @@ export default function Contact() {
           </p>
         </div>
         <div className="text-center text-gray-600 space-y-4">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="flex items-center">
-              <EnvelopeIcon className="w-6 h-6 text-indigo-600" />
-              <p className="ml-2 text-lg font-medium">Email:</p>
-            </div>
-            <p className="text-indigo-600">ioan-daniel.turc@funkweb.org</p>
+          <div className="bg-white p-6 rounded-lg shadow-lg flex items-center">
+            <EnvelopeIcon className="w-6 h-6 text-purple-600" />
+            <p className="ml-2 text-lg font-medium">Email:</p>
+            <p className="text-purple-600 ml-2">ioan-daniel.turc@funkweb.org</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="flex items-center">
-              <PhoneIcon className="w-6 h-6 text-indigo-600" />
-              <p className="ml-2 text-lg font-medium">Phone:</p>
-            </div>
-            <p className="text-indigo-600">+47 48620059</p>
+          <div className="bg-white p-6 rounded-lg shadow-lg flex items-center">
+            <PhoneIcon className="w-6 h-6 text-purple-600" />
+            <p className="ml-2 text-lg font-medium">Phone:</p>
+            <p className="text-purple-600 ml-2">+47 48620059</p>
           </div>
+          {/* Location and Map section */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="flex items-center">
-              <MapPinIcon className="w-6 h-6 text-indigo-600" />
+            <div className="flex items-center mb-4">
+              <MapPinIcon className="w-6 h-6 text-purple-600" />
               <p className="ml-2 text-lg font-medium">Location:</p>
+              <p className="text-purple-600 ml-2">Oslo, Norway</p>
             </div>
-            <p className="text-indigo-600">Oslo, Norway</p>
-            <div className="mt-4">
+            <div className="w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10600.78733822601!2d10.743710764888855!3d59.91292972061916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e67e693425d%3A0x408fddf807c7b20!2sOslo!5e0!3m2!1sen!2sno!4v1616579927509!5m2!1sen!2sno"
                 width="100%"
@@ -52,20 +49,11 @@ export default function Contact() {
           <div className="bg-white p-6 rounded-lg shadow-lg flex justify-center space-x-4">
             <Link
               href="https://www.facebook.com"
-              className="text-indigo-600 hover:text-indigo-900"
+              className="text-blue-600 hover:text-indigo-900"
               aria-label="Facebook"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M22.675 0h-21.35c-.734 0-1.325.591-1.325 1.325v21.351c0 .733.591 1.324 1.325 1.324h11.498v-9.294h-3.125v-3.622h3.125v-2.67c0-3.1 1.894-4.788 4.661-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.919c-1.505 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.621h-3.12v9.294h6.114c.733 0 1.324-.591 1.324-1.324v-21.351c0-.734-.591-1.325-1.324-1.325z" />
-              </svg>
-            </Link>
-            <Link
-              href="https://www.twitter.com"
-              className="text-indigo-600 hover:text-indigo-900"
-              aria-label="Twitter"
-            >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.609 1.794-1.574 2.163-2.724-.951.555-2.005.959-3.127 1.178-.897-.959-2.173-1.555-3.591-1.555-2.717 0-4.917 2.2-4.917 4.917 0 .386.044.762.127 1.124-4.084-.205-7.702-2.158-10.125-5.134-.423.722-.666 1.561-.666 2.475 0 1.71.87 3.217 2.19 4.096-.807-.026-1.566-.247-2.228-.616v.061c0 2.388 1.698 4.384 3.946 4.833-.414.112-.849.172-1.296.172-.317 0-.626-.03-.927-.086.631 1.953 2.445 3.377 4.6 3.417-1.68 1.318-3.804 2.105-6.102 2.105-.396 0-.79-.023-1.175-.068 2.179 1.398 4.768 2.212 7.557 2.212 9.054 0 14.002-7.497 14.002-13.986 0-.211-.005-.422-.015-.632.961-.694 1.8-1.562 2.457-2.549z" />
               </svg>
             </Link>
             <Link

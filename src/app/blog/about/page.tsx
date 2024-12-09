@@ -114,9 +114,11 @@ const About = () => {
           vellykkede prosjekter, mange av dem tilgjengelige på min
           GitHub-profil. Et av høydepunktene i karrieren min var å vinne
           førsteprisen i en webdesignkonkurranse for landingssiden jeg laget for
-          prosjektet "Lost in Translation". Denne erfaringen inspirerte meg til
-          å utforske grensene for design og teknologi ytterligere.
+          prosjektet &quot;Lost in Translation&quot;. Denne erfaringen
+          inspirerte meg til å utforske grensene for design og teknologi
+          ytterligere.
         </p>
+
         <p className="mt-4 text-gray-700 leading-relaxed">
           Jeg har også jobbet med å forbedre ytelsen og sikkerheten til
           webapplikasjoner ved å implementere avanserte teknikker som caching,

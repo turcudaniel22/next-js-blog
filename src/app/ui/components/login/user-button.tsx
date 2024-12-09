@@ -8,7 +8,6 @@ import { auth } from "../../../../../auth.config";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/app/ui/components/dropdown-menu";
@@ -19,7 +18,7 @@ export default async function UserButton() {
 
   if (!session?.user) return <SignIn />;
   return (
-    <div className="flex gap-2 items-center">
+    <div className="flex gap-2 items-center text-black">
       <span className="hidden text-sm sm:inline-flex">
         {session.user.email}
       </span>
@@ -42,16 +41,13 @@ export default async function UserButton() {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56" align="end" forceMount>
           <DropdownMenuLabel className="font-normal">
-            <div className="flex flex-col space-y-1">
-              <p className="text-sm font-medium leading-none">
+            <div className="flex flex-col space-y-1 text-black">
+              <p className="text-sm font-medium leading-none ">
                 {session.user.name}
-              </p>
-              <p className="text-xs leading-none text-muted-foreground">
-                {session.user.email}
               </p>
             </div>
           </DropdownMenuLabel>
-          <SignOut />
+          <SignOut className="text-black" />
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

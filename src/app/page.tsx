@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Head } from "next/document";
 import ImageSlider from "./ui/components/image-slider";
 
 export default function Home() {
