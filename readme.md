@@ -3,6 +3,11 @@
 ![SQL](https://img.shields.io/badge/SQL-2024-blue?logo=postgresql&logoColor=white&style=flat-square)  
 # Portfolio Blog - Next.js
 
+#Deployed link: https://next-js-blog-nine-pied.vercel.app/
+
+
+
+
 Welcome to the **Portfolio Blog** project! This is a personal portfolio and blog site built with **Next.js**, showcasing your work and posts with a sleek, modern design. This project leverages Next.js' features like server-side rendering, static site generation, and built-in optimizations.
 
 ## Features ✨
